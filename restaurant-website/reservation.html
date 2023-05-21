@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+      .border{
+        border:  2px solid red;
+      }
+    </style>
+    <title>RESERVATION</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="nav">
+        <img src="images/logosvg.svg" class="img1" />
+        <!-- <div class="btn">RESERVATION</div> -->
+      </div>
+      <div class="left_wrap">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="image_gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="desgin.html">Design</a></li>
+        </ul>
+        <div class="corner">
+          <ol>
+            <li><a href="#">404 page</a></li>
+            <li><a href="#">Under construction</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">© 2022 Seven Gourmet.</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="rotate" id="rotate_about">
+        <h1>Resrvation</h1>
+      </div>
+      <div class="centre_wrap_about">
+        <div id="call_us">
+          <h3 style="color: forestgreen; font-size: 23px">Call us</h3>
+
+          <p id="cont">
+            <span>
+              From Tuesday to Sunday 10.30am to 13.00pm <br />
+              Friday and Saturday 18:30pm to 20:30pm
+            </span>
+          </p>
+
+          <h3 style="color: forestgreen; font-size: 23px">Email</h3>
+          <p id="cont">reservation@dream-theme.com</p>
+
+          <h3 style="color: forestgreen; font-size: 23px">Dress code</h3>
+          <p id="cont">
+            Our dress code is smart casual though we strongly recommend dressing
+            up for the occasion. Gentlemen, we ask that you come dressed in
+            trousers and appropriate footwear.
+          </p>
+
+          <h3 style="color: forestgreen; font-size: 23px">Cancellations</h3>
+          <p id="cont">
+            To cancel your booking it is compulsory to write an email or call us
+            at least 72 hours in advance.
+          </p>
+        </div>
+        <div class="chef_img" id="form_reservation">
+          <div class="reserve_form">
+            <div style="float: left">
+              <h4>Name</h4>
+              <input type="text" id="name"/>
+            </div>
+            <div style="margin-left: 34px; float: left">
+              <h4>Surname</h4>
+              <input type="text" id="surname"/>
+            </div>
+            <div style="float: left; margin-top: 20px ;">
+              <h4>Email</h4>
+              <input type="email" id="emailid" />
+            </div>
+            <div style="margin-left: 34px; float: left; margin-top: 20px">
+              <h4>Phone</h4>
+              <input type="text" id="phone" />
+            </div>
+            <div style="float: left; margin-top: 20px">
+              <h4>Number of guests</h4>
+              <input type="number" id="guests" min="1" max="6" />
+            </div>
+            <div style="margin-left: 34px; float: left; margin-top: 20px">
+              <h4>Children</h4>
+              <input type="number" id="children" min="1" max="6" />
+            </div>
+            <div style="float: left; margin-top: 20px">
+              <h4>Date</h4>
+              <input type="date" id="date"/>
+            </div>
+            <div style="margin-left: 34px; float: left; margin-top: 20px">
+              <h4>Time</h4>
+              <input type="time" id="time"/>
+            </div>
+            <div style="float: left; margin-top: 20px">
+              <h4>Alleries & intolerances</h4>
+              <input type="text" id="message" style="padding-bottom: 60px; width: 445px" />
+            </div>
+            <div style="float: left; margin-top: 20px">
+              <input
+                type="checkbox"
+                style="height: 15px; width: 15px; float: left"
+              />
+              <h4 style="float: left; margin-left: 10px">
+                I have read and agree to the above terms and conditions.
+              </h4>
+            </div>
+            <div style="float: left; margin-top: 20px">
+              <button class="btn_res" onclick="validation()">SUBMIT RESERVATION REQUEST</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </body>
+</html>
